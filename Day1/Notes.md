@@ -8,7 +8,7 @@ An Array is a collection with/of the same data type stored in the continuous mem
 
 Data can be  conveniently accessed by the index of the Array.
 
-![image-20250820102408759](./images/image-20250820102408759.png)
+![image-20250820102408759](../images/image-20250820102408759.png)
 
 
 
@@ -16,19 +16,19 @@ Indexes start from 0.
 
 Because the memory locations of the Array are continuous, if we want to add or delete elements, we need to shift the position of other elements. For example, if we want to delete the element at index 3:
 
-![image-20250820102800000](./images/image-20250820102800000.png)
+![image-20250820102800000](../images/image-20250820102800000.png)
 
 Oh, I should say, elements of the Array cannot be deleted; they can only be overwritten.
 
 A 2D Array looks like:
 
-![image-20250820103227030](./images/image-20250820103227030.png)
+![image-20250820103227030](../images/image-20250820103227030.png)
 
 So, are the locations for a 2D Array is continuous?
 
 In Java, it might be like this:
 
-![image-20250820103542178](./images/image-20250820103542178.png)
+![image-20250820103542178](../images/image-20250820103542178.png)
 
 
 
@@ -42,7 +42,7 @@ Given an array of integers `nums` which is sorted in ascending order, and an int
 **中文**  
 给定一个按升序排序的整数数组 `nums` 和一个整数 `target`，编写一个函数在 `nums` 中搜索 `target`。如果目标值存在，则返回其索引；否则返回 `-1`。
 
-![image-20250820154354936](./images/image-20250820154354936.png)
+![image-20250820154354936](../images/image-20250820154354936.png)
 
 > I used the left-closed, right-closed interval for this question because the left-closed, right-open format is a bit more abstract.
 > The condition of the while loop is left <= right because when left == right, the target might still be at that position.
@@ -64,7 +64,7 @@ Given an integer array `nums` and an integer `val`, remove all occurrences of `v
 **中文**  
 给定一个整数数组 `nums` 和一个整数 `val`，请你原地移除所有数值等于 `val` 的元素。元素的顺序可以改变。然后返回数组中不等于 `val` 的元素的个数。
 
-![image-20250820175136732](./images/image-20250820175136732.png)
+![image-20250820175136732](../images/image-20250820175136732.png)
 
 > I used two pointers for this question.
 
@@ -89,7 +89,7 @@ Given an integer array `nums` sorted in non-decreasing order, return an array of
 **中文**  
 给你一个按非递减顺序排序的整数数组 `nums`，返回一个由每个数的平方组成的新数组，要求也按非递减顺序排序。
 
-![image-20250820191014189](./images/image-20250820191014189.png)
+![image-20250820191014189](../images/image-20250820191014189.png)
 
 > I declared a new array with the same length as nums to store the results. I used two pointers with a while loop: the left pointer starts at index 0, and the right pointer starts at nums.length - 1.
 
