@@ -10,7 +10,7 @@ Given an array of positive integers `nums` and a positive integer `target`, retu
 **中文**
 给定一个含有正整数的数组 `nums` 和一个正整数 `target`，找出总和大于等于 `target` 的最短连续子数组的长度。如果不存在符合条件的子数组，返回 0。
 
-![image-20250821120119895](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250821120119895-5802879.png)
+![image-20250821120119895](../images/image-20250821120119895-5802879.png)
 
 > This question is about the sliding window technique and the two-pointer approach.
 >
@@ -32,7 +32,7 @@ Given an array of positive integers `nums` and a positive integer `target`, retu
 **中文**
  给定一个整数数组 Array，请计算该数组在每个指定区间内元素的总和。
 
-![image-20250821231817619](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250821231817619-5843497.png)
+![image-20250821231817619](../images/image-20250821231817619-5843497.png)
 
 > This question is about the prefix sum technique.
 >  First of all, I initialized two integer arrays: the original array and the prefix sum array.
@@ -44,7 +44,7 @@ Given an array of positive integers `nums` and a positive integer `target`, retu
 >
 > Tips:
 >
-> ![image-20250821232353238](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250821232353238-5843833.png)
+> ![image-20250821232353238](../images/image-20250821232353238-5843833.png)
 >
 >  
 >
@@ -70,7 +70,7 @@ Given a positive integer `n`, generate an `n x n` matrix filled with elements fr
 **中文**
 给你一个正整数 `n`，生成一个包含 1 到 `n^2` 所有元素，且元素按顺时针螺旋顺序排列的 `n x n` 正方形矩阵。
 
-![image-20250821212604700](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250821212604700-5836764.png)
+![image-20250821212604700](../images/image-20250821212604700-5836764.png)
 
 > This problem is a bit abstract.
 >  First, I initialized 8 variables: one 2D `int[][]` matrix and seven integer variables.
@@ -104,7 +104,7 @@ All blocks must be split between A and B. Due to zoning restrictions, the entire
 
 注意：区块不可再分。
 
-![image-20250822023443574](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250822023443574-5855283.png)
+![image-20250822023443574](../images/image-20250822023443574-5855283.png)
 
 > This question is also related to the prefix sum technique, but applied to a two-dimensional array.
 >
