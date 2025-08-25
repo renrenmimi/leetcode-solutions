@@ -7,20 +7,20 @@ Each node contains a value and a reference (or pointer) to the next node.
 The pointer stores the address of the next node. For the last node, the pointer is `null`, indicating the end of the list.
 The entry point of a linked list is called the `head` node.
 
-![image-20250823122850625](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823122850625-5977330.png)
+![image-20250823122850625](../images/image-20250823122850625-5977330.png)
 
 In addition to singly linked lists, we also have doubly linked lists.
 In a singly linked list, each node has only one pointer that points to the next node,
 while in a doubly linked list, each node has two pointers: one to the next node and one to the previous node.
 This allows traversal in both directions—forward and backward.
 
-![image-20250823123151513](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823123151513-5977511.png)
+![image-20250823123151513](../images/image-20250823123151513-5977511.png)
 
 We also have circular linked lists.
 A circular linked list is a list where the tail node is connected back to the head node, forming a loop.
 This structure allows continuous traversal without reaching a null pointer.
 
-![image-20250823123410509](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823123410509-5977650.png)
+![image-20250823123410509](../images/image-20250823123410509-5977650.png)
 
 So how is data stored in a linked list?
  We know that data in an array is stored in continuous memory locations, but this is not the case for a linked list.
@@ -30,18 +30,18 @@ So how is data stored in a linked list?
 
 For example, as shown in the diagram, the head node might contain the value 2 and the tail node 7. Each node is stored in a different memory location and linked through pointers.
 
-![image-20250823123927542](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823123927542-5977967.png)
+![image-20250823123927542](../images/image-20250823123927542-5977967.png)
 
 So, how do we delete a node in a linked list?
 We simply update the `next` pointer of the previous node to point to `next.next`, effectively skipping over the node to be deleted.
 
-![image-20250823142936285](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823142936285-5984576.png)
+![image-20250823142936285](../images/image-20250823142936285-5984576.png)
 
 So, how do we insert a node into a singly linked list?
 We let the previous node point to the new node, and then point the new node to the next node.
 In other words, we update `prev.next = newNode`, and then `newNode.next = curr`.
 
-![image-20250823143344017](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823143344017-5984824.png)
+![image-20250823143344017](../images/image-20250823143344017-5984824.png)
 
 Let’s compare the characteristics of arrays and linked lists.
  When we initialize an array, its length is fixed and cannot be changed. If we want to change its size, we have to create a new array and copy the existing elements.
@@ -50,13 +50,13 @@ In contrast, the size of a linked list is not fixed. It allows dynamic insertion
  Linked lists are commonly used when the amount of data is unpredictable or constantly changing.
  They are suitable for scenarios where frequent insertions and deletions are needed, but random access is not a priority.
 
-![image-20250823155707221](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823155707221-5989827.png)
+![image-20250823155707221](../images/image-20250823155707221-5989827.png)
 
-![image-20250823155726935](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823155726935-5989846.png)
+![image-20250823155726935](../images/image-20250823155726935-5989846.png)
 
-![image-20250823155742191](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823155742191-5989862.png)
+![image-20250823155742191](../images/image-20250823155742191-5989862.png)
 
-![image-20250823155757046](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823155757046-5989877.png)
+![image-20250823155757046](../images/image-20250823155757046-5989877.png)
 
 
 
@@ -72,7 +72,7 @@ In contrast, the size of a linked list is not fixed. It allows dynamic insertion
 **中文**
  给你一个链表的头节点 `head` 和一个整数 `val`，请你删除链表中所有满足 `node.val == val` 的节点，并返回新的头节点。
 
-![image-20250823214914172](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250823214914172-6010954.png)
+![image-20250823214914172](../images/image-20250823214914172-6010954.png)
 
 > I initialized a dummy head node and set `dummy.next = head`. Then I used a `cur` pointer starting from the dummy head.
 >
@@ -114,13 +114,13 @@ In contrast, the size of a linked list is not fixed. It allows dynamic insertion
 
 - `deleteAtIndex(index)`
 
-  ![image-20250824003420323](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824003420323-6020860.png)
+  ![image-20250824003420323](../images/image-20250824003420323-6020860.png)
 
-  ![image-20250824003442392](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824003442392-6020882.png)
+  ![image-20250824003442392](../images/image-20250824003442392-6020882.png)
 
-  ![image-20250824003505347](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824003505347-6020905.png)
+  ![image-20250824003505347](../images/image-20250824003505347-6020905.png)
 
-  ![image-20250824003535818](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824003535818-6020935.png)
+  ![image-20250824003535818](../images/image-20250824003535818-6020935.png)
 
   > This question is quite similar to standard linked list operations, but the implementation details are more structured. Instead of initializing the head to `null`, I designed this linked list using a **dummy head node**, initialized with a value of 0. The value of the dummy head doesn’t matter; it’s just a placeholder that simplifies edge case handling.
   >
@@ -150,7 +150,7 @@ In contrast, the size of a linked list is not fixed. It allows dynamic insertion
 **中文**
  给你单链表的头节点 `head`，请你反转链表，并返回反转后的链表头节点。
 
-![image-20250824020139699](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824020139699-6026099.png)
+![image-20250824020139699](../images/image-20250824020139699-6026099.png)
 
 > This question can be solved using two approaches. The first one is the iterative two-pointer method.
 >
@@ -166,11 +166,11 @@ In contrast, the size of a linked list is not fixed. It allows dynamic insertion
 
 > **Space Complexity**: O(1)  dummyHead, cur
 
-![image-20250824112533677](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824112533677-6059933.png)
+![image-20250824112533677](../images/image-20250824112533677-6059933.png)
 
-![image-20250824113109229](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824113109229-6060269.png)
+![image-20250824113109229](../images/image-20250824113109229-6060269.png)
 
-![image-20250824113310487](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824113310487-6060390.png)
+![image-20250824113310487](../images/image-20250824113310487-6060390.png)
 
 > Another approach is the classic recursive method. Personally, I find this a very helpful example to understand how recursion works.
 >

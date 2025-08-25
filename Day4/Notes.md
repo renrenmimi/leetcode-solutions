@@ -10,7 +10,7 @@
 **中文**
  给你一个链表，两两交换其中相邻的节点，并返回交换后的链表。你必须在不修改节点内部的值的情况下完成本题（也就是说，仅仅交换节点本身）。
 
-![image-20250824153544339](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824153544339-6074944.png)
+![image-20250824153544339](../images/image-20250824153544339-6074944.png)
 
 > This problem can be solved using two approaches: an iterative method and a recursive method.
 >
@@ -34,7 +34,7 @@
 
 > **Space Complexity**: O(1)  dummyHead, a few variables
 
-![image-20250824154930919](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824154930919-6075770.png)
+![image-20250824154930919](../images/image-20250824154930919-6075770.png)
 
 > The recursive solution is very clean and elegant.
 >
@@ -60,7 +60,7 @@
 **中文**
  给你一个链表，删除链表的倒数第 `n` 个节点，并返回链表的头节点。
 
-![image-20250824165622200](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824165622200-6079782.png)
+![image-20250824165622200](../images/image-20250824165622200-6079782.png)
 
 > This problem is a classic example of the two-pointer technique.
 >
@@ -93,7 +93,7 @@
 **中文**
  给你两个单链表的头节点 `headA` 和 `headB`，请你找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回 `null`。
 
-![image-20250824181043110](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824181043110-6084243.png)
+![image-20250824181043110](../images/image-20250824181043110-6084243.png)
 
 > ### Method 1: Length Alignment (Brute-force but reliable)
 >
@@ -126,7 +126,7 @@
 
 > **Space Complexity**: O(1)  Few vairables
 
-![image-20250824185335931](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824185335931-6086815.png)
+![image-20250824185335931](../images/image-20250824185335931-6086815.png)
 
 > ### Method 2: Two-Pointer Redirection (Elegant & Space Efficient)
 >
@@ -148,7 +148,7 @@
 >
 > This method works because by switching heads, both pointers travel equal total distances.
 >
-> Tips: ![image-20250824190614180](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250824190614180-6087574.png)
+> Tips: ![image-20250824190614180](../images/image-20250824190614180-6087574.png)
 >
 > **Time Complexity**: O(n)  Length of LinkedList
 
@@ -166,7 +166,7 @@
 **中文**
  给定一个链表的头节点 `head`，返回链表开始入环的第一个节点。如果链表无环，则返回 `null`。
 
-![image-20250825010435828](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825010435828-6109075.png)
+![image-20250825010435828](../images/image-20250825010435828-6109075.png)
 
 > First, I use two pointers, `slow` and `fast`. `slow` moves one step at a time, `fast` moves two steps. If there is a cycle, the two pointers will eventually meet inside the cycle.
 >
@@ -200,11 +200,11 @@
 >
 > **Tips**: Images from Carl
 >
-> ![image-20250825010730476](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825010730476-6109250.png)
+> ![image-20250825010730476](../images/image-20250825010730476-6109250.png)
 >
-> ![image-20250825010743508](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825010743508-6109263.png)
+> ![image-20250825010743508](../images/image-20250825010743508-6109263.png)
 >
-> ![image-20250825010823086](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825010823086-6109303.png)
+> ![image-20250825010823086](../images/image-20250825010823086-6109303.png)
 >
 > **Time Complexity**: O(n) - where n is the number of nodes
 >
