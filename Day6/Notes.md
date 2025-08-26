@@ -2,7 +2,7 @@
 
 The basic theory of a hash table: actually, an array can be considered a simple hash table, where the **key** is the index. You can access elements directly using the index, as shown in the image below:
 
-![image-20250825111341415](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825111341415-6145621.png)
+![image-20250825111341415](../images/image-20250825111341415-6145621.png)
 
 So, what kind of problems can a hash table solve?
 
@@ -24,7 +24,7 @@ This hash code is calculated using a specific method, which can transform differ
 
 That way, we can map a student’s name into a specific index in the hash table.
 
-![image-20250825121918125](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825121918125-6149558.png)
+![image-20250825121918125](../images/image-20250825121918125-6149558.png)
 
 When the hash code generated from a student's name is larger than the size of the hash table, we apply a **modulo operation** to ensure that the result stays within the bounds of the array.
 
@@ -39,7 +39,7 @@ This situation is known as a **hash collision**, and we need specific strategies
 As shown in the diagram, both Xiao Li and Xiao Wang are mapped to index **1** in the hash table.
 This phenomenon is called a **hash collision**.
 
-![image-20250825122102077](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825122102077-6149662.png)
+![image-20250825122102077](../images/image-20250825122102077-6149662.png)
 
 There are generally two common ways to handle hash collisions: **chaining** and **linear probing**.
 
@@ -51,7 +51,7 @@ With **chaining**, all elements that collide at the same index are stored in a *
 
 This way, we can still access both Xiao Li and Xiao Wang by traversing the list at index `1`.
 
-![image-20250825122242921](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825122242921-6149762.png)
+![image-20250825122242921](../images/image-20250825122242921-6149762.png)
 
 In fact, the efficiency of **chaining** depends heavily on choosing an appropriate `tableSize` (the size of the hash table) relative to the `dataSize` (the number of elements).
 
@@ -70,11 +70,11 @@ For example, if a collision occurs and Xiao Li is already placed at a certain in
 
 Therefore, `tableSize` must be **greater than** `dataSize`, otherwise the hash table would not have any available space to accommodate the collided entries.
 
-![image-20250825122503588](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825122503588-6149903.png)
+![image-20250825122503588](../images/image-20250825122503588-6149903.png)
 
 There are three commonly used hash table structures: **arrays**, **sets**, and **maps**.
 
-![image-20250825130012283](/Users/fengweiren/Downloads/LeetCode/leetcode-solutions/images/image-20250825130012283-6152012.png)
+![image-20250825130012283](../images/image-20250825130012283-6152012.png)
 
 ### 🧠 Quick Memory Tip:
 
